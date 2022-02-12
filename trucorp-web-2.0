@@ -1,6 +1,6 @@
 FROM php:7.4-apache
 
-ADD tru.php
+ADD trucorp-web-2.0.php
 
 COPY index.php /var/www/html
 COPY trucorp-db.sql /var/www/html
