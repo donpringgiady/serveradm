@@ -1,0 +1,12 @@
+FROM php:7.4-apache
+
+ADD tru.php
+
+COPY index.php /var/www/html
+COPY trucorp-db.sql /var/www/html
+
+RUN chown -R www-data:www-data index.php
+RUN chmod -R 774 index.php
+
+
+EXPOSE 80
